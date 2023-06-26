@@ -197,6 +197,28 @@ TODO same as former with no ß eszett on altgr s
 		ς final sigma on: capslock shit s	(still also on: capslock shit c)
 
 
+greek azerty
+=============
+based on standard greek keyboard but mapped to french azerty instead of qwerty
+	
+** ADDED **
+	supports improvements from [better french azerty for math, physics and german]() (added part only, as capslock behavior is made to follow qwerty keyboards)
+		those improvements are totally invisible if you do not care
+	altgr σ 
+		ς (final sigma)
+
+** MODIFIED **
+	decimal separator on numeric keypad
+		. 	(instead of ,)
+	TODO alt version without this
+
+TODO 
+	tonos
+	dialytika tonos
+
+
+TODO replace superscript & supscript letter with greek letters
+
 
 
 @see also other interesting keyboards
