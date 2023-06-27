@@ -60,7 +60,7 @@ better french azerty for math, physics and german
 				Ε ε epsilon
 					altgr e correspond déjà à €, hors on ne veux pas changer la disposition par défaut
 					=> altgr **shift** e
-				σ Σ ς sigma, final sigma	<span id="sigma"></span>
+				σ Σ ς sigma, final sigma	<span id="sigma">§</span>
 					σ
 						capslock shift s
 						on réserve altgr s au ß eszett allemand
@@ -78,9 +78,15 @@ better french azerty for math, physics and german
 					ς final sigma
 						capslock shift c 	(**ADDED** par rapport au standard greek qwerty keyboard mapping)
 				diacritics
-					greek tonos, greek dialytika tonos
-						**NOT included** to avoid overloading the layout
-							/* where could we put them ? ¨ ? but we already added ´ (acute accent) on altgr ¨ */
+					tonos (greek tonos)
+						´ (acute accent) suivi d'une lettre grecque pouvant porter le tonos (ώάήέίύόΏΆΉΈΊΎΌ)
+						@see [#acute-accent]
+							c'est à dire :
+							altgr ^ 	*suivi de* 	altgr lettre
+													altgr shift lettre
+					greek dialytika tonos (greek dialytika tonos)
+						on remplace ^ (circonflexe, circumflex) par dialytika tonos ΅
+						^ (acute accent) suivi d'une lettre grecque pouvant porter le dialytika tonos (ΐΰ)
 					diaeresis
 						applied to relevant greek letters
 							ϊΪ ϋΫ
@@ -150,7 +156,7 @@ better french azerty for math, physics and german
 		capslock shift < (ie. capslock >)
 	·	"point médian"
 		altgr .		(altgr ;)
-	indices et notes <span id="superscript-subscript"></span>
+	indices et notes <span id="superscript-subscript">§</span>
 		via dead keys
 		superscript
 			shift ² 	ou  	capslock ²
@@ -188,6 +194,8 @@ better french azerty for math, physics and german
 		¡
 			TODO
 
+[#acute-accent]: #acute-accent
+[#superscript-subscript]: #superscript-subscript
 
 better french azerty for math, physics
 =======================================
