@@ -5,7 +5,7 @@ better french azerty for math, physics and german
 		does not lock non letters (same behavior as english US qwerty)
 		gives access to caps letters with diacritic (majuscules accentuées)
 ** ADDED **
-	acute accent dead key
+	acute accent dead key <span id="#acute-accent">§</span>
 		altgr ^ (row below numbers next to letter P)
 			touche avec déjà 2 diacritiques en dead key : ^ circonflexe et ¨ tréma diaeresis umlaut
 			TODO amélioration possible : accent sur certaines consonnes pas seulement les voyelles (ex : ẃ en welsh)
@@ -80,7 +80,7 @@ better french azerty for math, physics and german
 				diacritics
 					tonos (greek tonos)
 						´ (acute accent) suivi d'une lettre grecque pouvant porter le tonos (ώάήέίύόΏΆΉΈΊΎΌ)
-						@see [#acute-accent]
+						@see [#acute-accent][]
 							c'est à dire :
 							altgr ^ 	*suivi de* 	altgr lettre
 													altgr shift lettre
@@ -207,27 +207,49 @@ TODO same as former with no ß eszett on altgr s
 
 greek azerty
 =============
-based on standard greek keyboard but mapped to french azerty instead of qwerty
+letters based on standard greek keyboard but mapped to french azerty instead of qwerty
 	
 ** ADDED **
-	supports improvements from [better french azerty for math, physics and german]() (added part only, as capslock behavior is made to follow qwerty keyboards)
-		those improvements are totally invisible if you do not care
+	supports improvements from [better french azerty for math, physics and german][] (added part only, as capslock behavior is made to follow qwerty keyboards)
+		those improvements are totally transparent if you do not care
+		TODO replace superscript & supscript letter with greek letters
 	altgr σ 
 		ς (final sigma)
 
-** MODIFIED **
+** MODIFIED ** <span id="#greek-modified">§</span>
 	decimal separator on numeric keypad
 		. 	(instead of ,)
-	TODO alt version without this
+		TODO alt version without this
+	TODO \` (accent grave) totalement remplacé par tonos
+				how do we output backticks now though ???
+	^ (accent circomflexe à droite du P) totalement remplacé par dialytika tonos
 
+** INFO **
+	non letter keys are thoses displayed on french azerty except for @see [#greek-modified][]
+	TODO tonos produit par \` (accent grave) suivi d'une lettre
+		altgr 7 *puis* lettre
+	dialytika tonos produit par 
+		^ (accent cironflexe à droite du P) *puis* lettre
+			^ reste accessible via altgr 9
+		shift w
+			clavier grec standard
+	q
+		q -> ;
+		Q -> :
+		clavier grec standard
 TODO 
-	tonos
-	dialytika tonos
+	alt : une seule touche pour
+		tonos
+		diaeresis
+			shift tonos
+		dialytika tonos
+			altgr tonos
+		(à gauche du L sur le clavier grec standard)
+		sur ^ ¨ ? signifie inconsistance avec better azerty
 
 
-TODO replace superscript & supscript letter with greek letters
-
-
+[#greek-modified]: #greek-modified
+[better french azerty for math, physics and german]: #better-french-azerty-for-math-physics-and-german
 
 @see also other interesting keyboards
 =======================================
