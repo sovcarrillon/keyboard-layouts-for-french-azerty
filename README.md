@@ -1,3 +1,5 @@
+NOTE: keyboard layouts for Windows
+
 better french azerty for math, physics and german
 ==================================================
 ** MODIFIED **
@@ -251,11 +253,55 @@ TODO
 [#greek-modified]: #greek-modified
 [better french azerty for math, physics and german]: #better-french-azerty-for-math-physics-and-german
 
+
+
+korean azerty
+==============
+functions a bit differently: uses an IME Input Method Editor (like T9 for text message on old mobile phones)
+on Windows we can keep using default IME while only changing the keyboard layout
+	but changing this setting can only be done directly in the **registry**
+	sources
+		https://stackoverflow.com/questions/44122327/msklc-under-windows-10-create-custom-keyboard-layout-which-supports-ime-input
+		https://www.reddit.com/r/LearnJapanese/comments/6qojbi/for_azerty_keyboard_users_how_to_set_up_microsoft/
+		https://www.reddit.com/r/LearnJapanese/comments/f2x6mh/tip_use_ime_under_windows_with_a_nonus_keyboard/
+	regedit
+		HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts
+			\[LOCALE_ID]
+				fr-FR == 0000040c (see \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout\DosKeybCodes )
+				en-US == 00000409 (		or msklc .klc files)
+				ko-KR == 00000412
+				\Layout File
+					change dll to appropriate keyboard layout dll
+						default for korean is KBDUS.DLL
+						for french azerty
+							KBDFR.DLL
+								works almost perfectly but can't access to "?," quickly as it is used by "ㅡ"
+								TODO standard azerty with M and ",?" swapped
+						or use custom: [mklc keyboard ID].dll
+							can be found under LOCALE_ID starting with an "a"
+		**USELESS hence untested** but might be useful ? some reddit answer said to do that for japanese
+			HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\Parameters
+				\LayerDriver XXX
+					change dll to appropriate keyboard layout dll
+					**LayerDriver KOR** default is kbd101a.dll
+		then **reboot**
+
+
+
+
 @see also other interesting keyboards
 =======================================
 AFNOR
 	[fr azerty AFNOR NF Z71-300] (https://www.boutique.afnor.org/fr-fr/norme/nf-z71300/interfaces-utilisateurs-dispositions-de-clavier-bureautique-francais/fa188960/1792) (/!\ norme payante, pas lue personnellement)
 	description http://norme-azerty.fr/
-	une implémentation windows https://github.com/springcomp/optimized-azerty-win/tree/main
+	une implémentation Windows https://github.com/springcomp/optimized-azerty-win/tree/main
 		doc de l'implémentation https://springcomp.github.io/optimized-azerty-win/
-	une implémentation linux https://github.com/Djyp/azerty_afnor
+	une implémentation Linux https://github.com/Djyp/azerty_afnor
+
+Korean IME with romaja support
+	Nalgaeset Hangul Input System
+	http://moogi.new21.org/en/ngs/index.htm
+
+chrome input tool extension
+	https://chrome.google.com/webstore/detail/google-input-tools/mclkkofklkfljcocdinagocijmpgbhab
+	same as the one from translate.google.com
