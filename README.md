@@ -1,4 +1,6 @@
-NOTE: keyboard layouts for Windows
+keyboard layouts for Windows
+
+
 
 better french azerty for math, physics and german
 ==================================================
@@ -92,46 +94,6 @@ better french azerty for math, physics and german
 					diaeresis
 						applied to relevant greek letters
 							ϊΪ ϋΫ
-			alternative 
-				lorsque pas de correspondance latine (ou correspondance approchante déjà occupée)
-					lettre latine inoccupée la ** graphie la plus proche **
-						Θ θ thêta theta
-							=> Q
-							graphie proche
-							(t occupé par Τ τ tau)
-							(Ϙ ϙ qoppa not included)
-						Ξ ξ xi
-							=> c
-							(choix discutable entre Ξ ξ xi et χ Χ khi pour x, touche proche choisie bien que c == σ Σ ς sigma)
-							(à noter double correspondance s et c pour σ Σ ς sigma mais on a besoin d'une touche, ς sur capslock shift c tout de même)
-						χ Χ khi
-							=> x
-							(choix discutable entre Ξ ξ xi et χ Χ khi, graphie proche choisie)
-						ψ Ψ psi
-							=> v
-							(pas terrible mais pas mieux)
-						Ω ω	oméga omega
-							=> w
-							graphie minuscule proche
-							(o occupé par Ο ο omicron TODO remplacer par oméga car omicron identique au o latin ?)
-				double correspondance pour
-						Ι ι iota
-							i
-							j
-						Υ ι uspilon
-							u
-							y
-				```
-				15	Y		1	y	Y	-1	03c5	03a5		// LATIN SMALL LETTER Y, LATIN CAPITAL LETTER Y, <none>, GREEK SMALL LETTER UPSILON, GREEK CAPITAL LETTER UPSILON
-				16	U		1	u	U	-1	03c5	03a5		// LATIN SMALL LETTER U, LATIN CAPITAL LETTER U, <none>, GREEK SMALL LETTER UPSILON, GREEK CAPITAL LETTER UPSILON
-				17	I		1	i	I	-1	03b9	0399		// LATIN SMALL LETTER I, LATIN CAPITAL LETTER I, <none>, GREEK SMALL LETTER IOTA, GREEK CAPITAL LETTER IOTA
-				1e	Q		1	q	Q	-1	03b8	0398		// LATIN SMALL LETTER Q, LATIN CAPITAL LETTER Q, <none>, GREEK SMALL LETTER THETA, GREEK CAPITAL LETTER THETA
-				24	J		1	j	J	-1	03b9	0399		// LATIN SMALL LETTER J, LATIN CAPITAL LETTER J, <none>, GREEK SMALL LETTER IOTA, GREEK CAPITAL LETTER IOTA
-				2c	W		1	w	W	-1	03c9	03a9		// LATIN SMALL LETTER W, LATIN CAPITAL LETTER W, <none>, GREEK SMALL LETTER OMEGA, GREEK CAPITAL LETTER OMEGA
-				2e	C		SGCap	c	C	-1	03be	039e		// LATIN SMALL LETTER C, LATIN CAPITAL LETTER C, <none>, GREEK SMALL LETTER XI, GREEK CAPITAL LETTER XI
-				-1	-1	0	C	03c2		// LATIN CAPITAL LETTER C, GREEK SMALL LETTER FINAL SIGMA
-				2f	V		1	v	V	-1	03c8	03a8		// LATIN SMALL LETTER V, LATIN CAPITAL LETTER V, <none>, GREEK SMALL LETTER PSI, GREEK CAPITAL LETTER PSI
-				```
 		¬ "not operator" (also "not sign")
 			altgr !
 		exposants et indices
@@ -195,6 +157,11 @@ better french azerty for math, physics and german
 			TODO remove
 		¡
 			TODO
+	TODO
+		dead keys + space
+			also inserts space after the raw dead key
+			is it possible ?
+			is it even desirable ?
 
 [#acute-accent]: #acute-accent
 [#superscript-subscript]: #superscript-subscript
