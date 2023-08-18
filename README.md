@@ -264,6 +264,16 @@ on Windows we can keep using default IME while only changing the keyboard layout
 		then **reboot**
 
 
+khmer azerty
+=============
+letters based on standard khmer keyboard but mapped to french azerty instead of US qwerty
+	lettres de base OK
+	mapping un peu compliqué pour les voyelles indépendantes et tous les diacritiques rares...
+
+
+
+
+
 uninstall keyboards
 ====================
 Start  > Settings  > Apps > Apps & features 
