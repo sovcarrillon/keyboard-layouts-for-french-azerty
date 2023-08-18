@@ -142,6 +142,7 @@ better french azerty for math, physics and german
 				suivi des chiffres ⁰¹²³⁴⁵⁶⁷⁸⁹
 				suivi des charactères ⁺⁻⁼⁽⁾
 				suivi des lettres ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖ𐞥ʳˢᵗᵘᵛʷˣʸᶻ(toutes sauf q)
+				suivi des lettres grecques ᵝᵞᵟᵋᶿᶹᵠᶲᵡ
 					MSKLC does not support U+107a5  (0071	107a5	// q -> 𐞥)
 						TODO is there any workaround ?
 				suivi de espace ˄ "Modifier Letter Up Arrowhead"
@@ -152,6 +153,7 @@ better french azerty for math, physics and german
 				suivi des chiffres ₀₁₂₃₄₅₆₇₈₉
 				suivi des charactères ₊₋₌₍₎
 				suivi des lettres ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ (uniquement aehijklmnoprstuvx, ie manque bcdfgqwyz)
+				suivi des lettres grecques ᵦᵧᵨᵩᵪ
 				suivi de espace ˅ "Modifier Letter Down Arrowhead"
 					alternative ⌄ "Down Arrowhead" ? no does not seem to work without modifier before
 	ligatures
@@ -202,45 +204,32 @@ letters based on standard greek keyboard but mapped to french azerty instead of 
 ** ADDED **
 	supports improvements from [better french azerty for math, physics and german][] (added part only, as capslock behavior is made to follow qwerty keyboards)
 		those improvements are totally transparent if you do not care
-		TODO replace superscript & supscript letter with greek letters
-	altgr σ 
+	altgr σ
 		ς (final sigma)
+	\` (accent grave) (altgr 7) combiné à une lettre grecque devient tonos
+		reste un accent grave "backtick" lorsque suivi par une espace
 
 ** MODIFIED ** <span id="#greek-modified">§</span>
 	decimal separator on numeric keypad
 		. 	(instead of ,)
-		TODO alt version without this
-	TODO \` (accent grave) totalement remplacé par tonos
-				how do we output backticks now though ???
 	^ (accent circomflexe à droite du P) totalement remplacé par dialytika tonos
 
 ** INFO **
-	non letter keys are thoses displayed on french azerty except for @see [#greek-modified][]
-	TODO tonos produit par \` (accent grave) suivi d'une lettre
+	non letter keys are those displayed on french azerty except for @see [#greek-modified][]
+	tonos produit par \` (accent grave) suivi d'une lettre
 		altgr 7 *puis* lettre
 	dialytika tonos produit par 
 		^ (accent cironflexe à droite du P) *puis* lettre
 			^ reste accessible via altgr 9
 		shift w
-			clavier grec standard
+			suit le clavier grec standard
 	q
 		q -> ;
 		Q -> :
-		clavier grec standard
-TODO 
-	alt : une seule touche pour
-		tonos
-		diaeresis
-			shift tonos
-		dialytika tonos
-			altgr tonos
-		(à gauche du L sur le clavier grec standard)
-		sur ^ ¨ ? signifie inconsistance avec better azerty
-
+		suit le clavier grec standard
 
 [#greek-modified]: #greek-modified
 [better french azerty for math, physics and german]: #better-french-azerty-for-math-physics-and-german
-
 
 
 korean azerty
